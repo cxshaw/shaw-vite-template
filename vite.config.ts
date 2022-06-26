@@ -12,7 +12,7 @@ export default defineConfig({
     reactJsx(),
     createStyleImportPlugin({
       resolves: [
-        AntdResolve(),
+        // AntdResolve(),
       ],
     }),
   ],
