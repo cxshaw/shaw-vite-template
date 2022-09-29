@@ -1,10 +1,10 @@
-import "/App.css";
+import "./App.less";
 
 function App() {
-    const _a = 1,
-        _b = _a === 1;
 
-    return <div className="App">template{_a}{_b}</div>;
+	return <div className="App">
+		<h1 className="text-2xl font-bold underline h-20 text-red-600">文本測試</h1>
+	</div>;
 }
 
 export default App;

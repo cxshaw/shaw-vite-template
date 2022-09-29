@@ -1,19 +1,12 @@
 // @ts-ignore
 import path from "path";
 import { defineConfig } from "vite";
-import { createStyleImportPlugin } from "vite-plugin-style-import";
-
 import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
     react(),
-    createStyleImportPlugin({
-      resolves: [
-        // AntdResolve(),
-      ],
-    }),
   ],
   server: {
     // 可以开启 HTTPS 测试 wss 接口
@@ -23,14 +16,6 @@ export default defineConfig({
   resolve: {
     alias: [
       {
-        find: "@/routes",
-        replacement: path.resolve(__dirname, "./src/common"),
-      },
-      {
-        find: "@/layouts",
-        replacement: path.resolve(__dirname, "./src/layouts"),
-      },
-      {
         find: "@/pages",
         replacement: path.resolve(__dirname, "./src/pages"),
       },
@@ -39,16 +24,8 @@ export default defineConfig({
         replacement: path.resolve(__dirname, "./src/components"),
       },
       {
-        find: "@/routes",
-        replacement: path.resolve(__dirname, "./src/routes"),
-      },
-      {
         find: "@/types",
         replacement: path.resolve(__dirname, "./src/types"),
-      },
-      {
-        find: "@/api",
-        replacement: path.resolve(__dirname, "./src/api"),
       },
       {
         find: "@/utils",
@@ -62,10 +39,6 @@ export default defineConfig({
         find: "@/hooks",
         replacement: path.resolve(__dirname, "./src/hooks"),
       },
-      {
-        find: "@/contexts",
-        replacement: path.resolve(__dirname, "./src/contexts"),
-      },
     ],
   },
   css: {
@@ -75,7 +48,6 @@ export default defineConfig({
     preprocessorOptions: {
       less: {
         javascriptEnabled: true,
-        additionalData: '@import "./src/styles/var.less";',
       },
     },
   },
