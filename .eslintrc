@@ -3,6 +3,9 @@
 		"eslint-config-ali",
 		"prettier"
 	],
+	"plugins": [
+		"@typescript-eslint"
+	],
 	"env": {
 		"browser": true,
 		"node": true
@@ -139,7 +142,8 @@
 		"no-return-assign": "warn",
 		"no-script-url": "error",
 		"no-self-compare": "error",
-		"no-shadow": "error",
+		"no-shadow": "off",
+		"@typescript-eslint/no-shadow": "error",
 		"no-shadow-restricted-names": "error",
 		"no-spaced-func": "error",
 		"no-sparse-arrays": "error",
@@ -152,13 +156,8 @@
 		"no-unneeded-ternary": "error",
 		"no-unreachable": "error",
 		"no-unused-expressions": "error",
-		"no-unused-vars": [
-			"error",
-			{
-				"vars": "all",
-				"args": "after-used"
-			}
-		],
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": "error",
 		"no-use-before-define": "error",
 		"no-useless-call": "error",
 		"no-var": "error",

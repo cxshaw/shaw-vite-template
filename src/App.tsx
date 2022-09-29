@@ -1,9 +1,11 @@
-import "./App.less";
+import Forms from '@/pages/forms'
+import Preview from '@/pages/preview'
 
 const App = () => {
 
-  return <div className="App">
-    <h1 className="text-2xl font-bold underline h-20 text-red-600">文本測試</h1>
+  return <div className="flex">
+    <Forms/>
+    <Preview/>
   </div>;
 }
 
