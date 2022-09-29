@@ -7,7 +7,7 @@
 		"build": "tsc && vite build",
 		"preview": "vite preview",
 		"prepare": "husky install",
-		"lint": "eslint src/**/*.{js,jsx,tsx,ts} --fix",
+		"lint": "eslint 'src/**/*.{js,jsx,tsx,ts}' --fix",
 		"prettier": "prettier --write src/**/*.{less,scss,css,md,json}",
 		"prepush": "yarn lint && yarn prettier"
 	},
@@ -21,6 +21,7 @@
 	},
 	"devDependencies": {
 		"@babel/eslint-parser": "^7.19.1",
+		"@babel/preset-react": "^7.18.6",
 		"@types/node": "18.7.13",
 		"@types/react": "^18.0.17",
 		"@types/react-dom": "^18.0.6",

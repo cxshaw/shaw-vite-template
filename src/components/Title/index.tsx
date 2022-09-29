@@ -5,14 +5,15 @@ export interface ITitleProps {
 }
 
 const Title: FC<ITitleProps> = (props) => {
-	const { text } = props;
-	return (
-		<div>{text}</div>
-	)
+  const { text } = props;
+
+  return (
+    <div>{text}</div>
+  )
 }
 
 Title.defaultProps = {
-	text: 'title'
+  text: 'title'
 }
 
 export default Title

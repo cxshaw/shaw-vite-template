@@ -7,7 +7,7 @@
 		"browser": true,
 		"node": true
 	},
-	//	"parser": "@typescript-eslint/parser",
+	"parser": "@typescript-eslint/parser",
 	"parserOptions": {
 		"ecmaFeatures": {
 			"jsx": true
@@ -187,6 +187,7 @@
 			}
 		],
 		"lines-around-comment": "error",
-		"newline-after-var": "error"
+		"newline-after-var": "error",
+		"import/no-unresolved": "off"
 	}
 }

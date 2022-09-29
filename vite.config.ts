@@ -6,49 +6,50 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    react(),
+    react()
   ],
   server: {
     // 可以开启 HTTPS 测试 wss 接口
     // https: true,
     cors: true,
+    open: true
   },
   resolve: {
     alias: [
       {
         find: "@/pages",
-        replacement: path.resolve(__dirname, "./src/pages"),
+        replacement: path.resolve(__dirname, "./src/pages")
       },
       {
         find: "@/components",
-        replacement: path.resolve(__dirname, "./src/components"),
+        replacement: path.resolve(__dirname, "./src/components")
       },
       {
         find: "@/types",
-        replacement: path.resolve(__dirname, "./src/types"),
+        replacement: path.resolve(__dirname, "./src/types")
       },
       {
         find: "@/utils",
-        replacement: path.resolve(__dirname, "./src/utils"),
+        replacement: path.resolve(__dirname, "./src/utils")
       },
       {
         find: "@/styles",
-        replacement: path.resolve(__dirname, "./src/styles"),
+        replacement: path.resolve(__dirname, "./src/styles")
       },
       {
         find: "@/hooks",
-        replacement: path.resolve(__dirname, "./src/hooks"),
-      },
-    ],
+        replacement: path.resolve(__dirname, "./src/hooks")
+      }
+    ]
   },
   css: {
     modules: {
-      localsConvention: "camelCase",
+      localsConvention: "camelCase"
     },
     preprocessorOptions: {
       less: {
-        javascriptEnabled: true,
-      },
-    },
-  },
+        javascriptEnabled: true
+      }
+    }
+  }
 });
