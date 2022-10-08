@@ -187,6 +187,7 @@
 		],
 		"lines-around-comment": "error",
 		"newline-after-var": "error",
-		"import/no-unresolved": "off"
+		"import/no-unresolved": "off",
+		"semi": "error"
 	}
 }

@@ -1,12 +1,14 @@
-import Forms from '@/pages/forms'
-import Preview from '@/pages/preview'
+import Button from '@/components/Button';
+import Preview from '@/pages/preview';
 
 const App = () => {
 
-  return <div className="flex">
-    <Forms/>
-    <Preview/>
-  </div>;
-}
+  return (
+    <div>
+      <Preview/>
+      <Button text={"生成"}/>
+    </div>
+  );
+};
 
 export default App;
